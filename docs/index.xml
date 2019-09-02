@@ -12,6 +12,73 @@
     
     <item>
       <title></title>
+      <link>https://jaswine.com/docs/linux/docs/common/auto_open/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/common/auto_open/</guid>
+      <description> 开机自启动 有一些程序需要开机就启动，比如一台物理机上有好几个应用，对于运维的来说就要手工写很多命令行，一个地方写错了就可能会出现问题，所以在运维的时候应该是按照运维方案写好脚本，直接运行脚本来运维项目。所以服务器重启的时候希望运行对应的脚本 然后自己完成部署。
+方式1: 方式2: 方式3: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/common/corn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/common/corn/</guid>
+      <description> 开启定时任务 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/disk/base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/disk/base/</guid>
+      <description> 磁盘知识 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/disk/init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/disk/init/</guid>
+      <description> 磁盘格式化和分区 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/disk/load/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/disk/load/</guid>
+      <description> 磁盘挂载 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/info/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/info/menu/</guid>
+      <description> Linux系统架构&amp;amp;目录 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/sample/book_open/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/sample/book_open/</guid>
+      <description> 笔记本合盖保持系统运行  @Version: CentOS 7.4
+ 使用老的笔记本安装Linux系统来日常运行点东西在上面，保持自己的开发机上干净一点。在使用的时候，安装完Linux合上盖子系统休眠了，修改下让笔记本在合盖子的情况下不会休眠。
+方法 # 0x1.修改配置文件 vim /etc/systemd/logind.conf # 0x2.修改参数(lock表示锁屏继续工作) HandleLidSwitch=lock # 0x3.应用生效 systemctl restart systemd-logind  补充 除了lock之外还有别的参数，意思分别如下
+   参数 意义     ignore 忽略，跳过   power off 关机   eboot 重启   halt 挂起   suspend (默认)暂停执行的shell   hibernate 休眠   lock 锁屏但是还是运行程序    </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://jaswine.com/docs/linux/docs/shell/base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

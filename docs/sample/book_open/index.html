@@ -11,7 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
   
-    Docs
+    
+    Book Open
   
  | Linux Doc</title>
 
@@ -23,7 +24,6 @@
 <link rel="icon" href="/docs/linux/favicon.png" type="image/x-icon">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://jaswine.com/docs/linux/docs/index.xml" title="Linux Doc" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -50,7 +50,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2flinux\2f docs\2f "] {
+  nav ul a[href$="\2f docs\2flinux\2f docs\2fsample\2f book_open\2f "] {
       color: #004ed0;
   }
   </style>
@@ -109,13 +109,88 @@ https://github.com/alex-shpak/hugo-book
   </label>
   <strong>
   
-    Docs
+    
+    Book Open
   
 </strong>
 </header>
 
       
-<article class="markdown"></article>
+<article class="markdown">
+
+<h1 id="笔记本合盖保持系统运行">笔记本合盖保持系统运行</h1>
+
+<blockquote>
+<p>@Version: CentOS 7.4</p>
+</blockquote>
+
+<p>使用老的笔记本安装<code>Linux</code>系统来日常运行点东西在上面，保持自己的开发机上干净一点。在使用的时候，安装完<code>Linux</code>合上盖子系统休眠了，修改下让笔记本在合盖子的情况下不会休眠。</p>
+
+<h2 id="方法">方法</h2>
+
+<pre><code class="language-shell"># 0x1.修改配置文件
+
+vim /etc/systemd/logind.conf
+
+# 0x2.修改参数(lock表示锁屏继续工作)
+HandleLidSwitch=lock
+
+# 0x3.应用生效
+
+systemctl restart systemd-logind
+
+</code></pre>
+
+<h2 id="补充">补充</h2>
+
+<p>除了<code>lock</code>之外还有别的参数，意思分别如下</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">意义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ignore</td>
+<td align="left">忽略，跳过</td>
+</tr>
+
+<tr>
+<td align="left">power off</td>
+<td align="left">关机</td>
+</tr>
+
+<tr>
+<td align="left">eboot</td>
+<td align="left">重启</td>
+</tr>
+
+<tr>
+<td align="left">halt</td>
+<td align="left">挂起</td>
+</tr>
+
+<tr>
+<td align="left">suspend</td>
+<td align="left">(默认)暂停执行的shell</td>
+</tr>
+
+<tr>
+<td align="left">hibernate</td>
+<td align="left">休眠</td>
+</tr>
+
+<tr>
+<td align="left">lock</td>
+<td align="left">锁屏但是还是运行程序</td>
+</tr>
+</tbody>
+</table>
+</article>
 
       
 
@@ -124,6 +199,18 @@ https://github.com/alex-shpak/hugo-book
 
     
   
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#笔记本合盖保持系统运行">笔记本合盖保持系统运行</a>
+<ul>
+<li><a href="#方法">方法</a></li>
+<li><a href="#补充">补充</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
 
 
 

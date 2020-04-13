@@ -33,12 +33,22 @@
   </url>
   
   <url>
+    <loc>https://jaswine.com/docs/linux/docs/net/firewall/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jaswine.com/docs/linux/docs/sample/book_open/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jaswine.com/docs/linux/docs/shell/base/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/linux/docs/shell_example/yum/</loc>
     <priority>0</priority>
   </url>
   

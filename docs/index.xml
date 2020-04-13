@@ -53,7 +53,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jaswine.com/docs/linux/docs/disk/load/</guid>
-      <description> 磁盘挂载 </description>
+      <description> 磁盘挂载/卸载 @Linux发行版本: CentOS 7.4
+1.查看磁盘情况 磁盘已经安装好了，现在看一下情况
+fdisk -l  </description>
     </item>
     
     <item>
@@ -63,6 +65,16 @@
       
       <guid>https://jaswine.com/docs/linux/docs/info/menu/</guid>
       <description> Linux系统架构&amp;amp;目录 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/net/firewall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/net/firewall/</guid>
+      <description> 防火墙操作 @Linux发行版:CentOS 7.4
+参照  Linux - firewall  添加防火墙访问 </description>
     </item>
     
     <item>
@@ -84,6 +96,15 @@
       
       <guid>https://jaswine.com/docs/linux/docs/shell/base/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/linux/docs/shell_example/yum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/linux/docs/shell_example/yum/</guid>
+      <description> Yum的shell脚本 1.修改yum源为阿里云源 wget https://cdn.jaswine.com/Web/Tech-Doc/linux/script/yum_aliyun.sh bash yum_aliyun.sh  </description>
     </item>
     
   </channel>
